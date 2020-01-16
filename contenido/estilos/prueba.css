@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style the header */
+
+#header,
+header {
+    background-color: #008080;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+
+#nav_bar,
+nav {
+    #nav {
+        width: 155px;
+    }
+    .titulonav {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #000000;
+        font-size: 8pt;
+        font-weight: bold;
+        background-color: #999999;
+        color: #ffffff;
+        padding: 4px;
+    }
+    .cuerporec {
+        margin-top: 4px;
+        margin-right: 0pt;
+        margin-bottom: 10px;
+        margin-left: 0pt;
+    }
+    .cuerporec ul {
+        margin-top: 5px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        padding-top: 0pt;
+        padding-right: 0pt;
+        padding-bottom: 0pt;
+        padding-left: 1px;
+        list-style-type: none;
+        list-style-image: none;
+        list-style-position: outside;
+    }
+    .cuerporec li {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #d7d7d7;
+        padding: 1px 0 2px 2px;
+        font-size: 8pt;
+        padding-bottom: 2px;
+        margin-top: 2px;
+        margin-right: 0pt;
+        margin-bottom: 2px;
+        margin-left: 0pt;
+        background-image: url(fondo_gris.gif);
+    }
+    .cuerporec a {
+        text-decoration: none;
+    }
+}
+
+
+/* Style the list inside the menu */
+
+#nav_bar ul,
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#content,
+section {
+    width: 82%;
+    float: left;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.article,
+article {
+    padding: 20px;
+    /*width: 100%;*/
+    background-color: #f1f1f1;
+    height: 300px;
+    /* only for demonstration, should be removed */
+}
+
+
+/* Clear floats after the columns */
+
+#content:after,
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Style the footer */
+
+#footer,
+footer {
+    background-color: #C0C0C0;
+    padding: 10px;
+    text-align: right;
+    color: gray;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+@media (max-width: 600px) {
+    #nav_bar,
+    nav,
+    #content,
+    section {
+        width: 100%;
+        height: auto;
+    }
+}

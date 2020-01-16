@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Actividad 13</title>
+    <meta name="author" content="Jacobo" />
+    <meta name="keywords" content="actividad 13" />
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <h1>Formulario de alta de usuario</h1>
+    <label name="name">Identificador de alta de usuario</label><input type="name" name="name" value="usu_012345">
+    <fieldset>
+        <legend>Datos Identificativos</legend>
+        <label name="nombre1">Nombre</label>
+        <br>
+        <input type="name" name="nombre1" min="2" max="20" required>
+        <br>
+        <label name="apellido">Apellidos</label>
+        <br>
+        <input type="name" name="apellido" min="2" max="100" required>
+        <br>
+        <label name="sexo">Sexo</label>
+        <br>
+        <input type="checkbox" name="sexo">Varón
+        <input type="checkbox" checked="checked">Mujer
+        <br>
+        <label name="fecha">Fecha de nacimiento</label>
+        <br>
+        <input type="date" name="fecha">
+        <br>
+        <label for="i-email">Email</label>
+        <br>
+        <input type="email" id="i-email" name="email" required value="usuario@servidor.com">
+
+    </fieldset>
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <label name="pais">País</label>
+        <select name="pais">
+        <option disabled="disabled" selected="selected">Seleccione un país</option>>
+        <option value="españa">España</option>
+        <option value="portugal">Portugal</option>
+        <option value="francia">Francia</option>
+        </select>
+        <br>
+        <label for="i-rango">Número de hijos:</label>
+        <br>
+        <input type="range" id="i-rango" min="1" max="10" value="2" step="1" name="rango">
+        <br> Aficiones
+        <br>
+        <input type="checkbox" name="sexo">Deporte<br>
+        <input type="checkbox" checked="checked">Lectura<br>
+        <input type="checkbox" name="sexo">Cine<br>
+        <label name="comentarios">Comentarios personales:</label><br>
+        <textarea name="pelicula_favorita" rows="5" cols="40">Escriba aquí sus comentarios...</textarea>
+    </fieldset>
+
+    <br />
+    <input type="submit" value="Guardar cambios" />
+    <input type="reset" value="Restablecer" />
+
+
+    <hr>
+    <p><a href="../../../actividades.html">Inicio actividades</a></p>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+  body {
+      font: 24px Helvetica;
+      background: whitesmoke;
+  }
+  
+  #main {
+      min-height: auto;
+      margin: 0px;
+      padding: 0px;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row;
+      flex-flow: row;
+  }
+  
+  #main>article {
+      margin: 4px;
+      padding: 5px;
+      border: 1px solid white;
+      border-radius: 7pt;
+      background: #f1f1f1;
+      -webkit-flex: 3 1 60%;
+      flex: 3 1 60%;
+      -webkit-order: 2;
+      order: 2;
+  }
+  
+  #main>article h2 {
+      text-align: center;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+  }
+  
+  li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+  }
+  /* Change the link color on hover */
+  
+  li a:hover {
+      background-color: #555;
+      color: white;
+  }
+  
+  header {
+      display: block;
+      margin: 4px;
+      min-height: 10px;
+      border: 1px solid #008080;
+      border-radius: 7pt;
+      background: #008080;
+      color: white;
+      padding: 30px;
+      text-align: left;
+      font-size: 20px;
+      background-image: url("../media/874890.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 10%;
+  }
+  
+  footer p {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      margin-top: 24px;
+  }
+  
+  footer ul {
+      margin-top: 24px;
+      float: left;
+      width: 18%;
+      height: 425px;
+  }
+  /* Demasiado estrecho para soportar 3 columnas */
+  
+  @media all and (max-width: 640px) {
+      #main,
+      #page {
+          -webkit-flex-flow: column;
+          flex-flow: column;
+      }
+      #main>article,
+      #main>nav,
+      #main>aside {
+          /* Return them to document order */
+          -webkit-order: 0;
+          order: 0;
+      }
+      #main>nav,
+      #main>aside,
+      header,
+      footer {
+          min-height: 50px;
+          max-height: 50px;
+      }
+  }

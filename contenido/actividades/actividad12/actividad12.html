@@ -1,0 +1,64 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Actividad 12</title>
+    <meta name="author" content="Jacobo" />
+    <meta name="keywords" content="Actividad 12" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <h1>Rellena tu CV</h1>
+    <form method="get" action="servidor_act11.php" enctype="multipart/form-data">
+
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="text">Nombre</label> <input id="text" type="text" />
+            <br />
+            <br />
+            <label for="descripcion">Descripción</label>
+            <br />
+            <textarea id="descripcion" name="descripcion" rows="6" cols="60"></textarea>
+            <br />
+            <label for="input_foto">Foto:</label><br />
+            <input id="input_foto" type="file" name="foto" />
+            <br />
+            <br />
+            <input id="visitas" type="checkbox" name="visitas" /><label for="visitas">Añadir contador de visitas</label>
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for="precio">Precio</label> <input id="precio" type="number" min="0" max="10000000">€ <label for="impuestos">Impuestos</label>
+            <select id="impuestos" name="impuestos">
+                <option disabled="disabled" selected="selected">%</option>
+                <option value="4%">4%</option>
+                <option value="7%">7%</option>
+                <option value="16%">16%</option>
+                <option value="25%">25%</option>
+            </select>
+            <br />
+            <br />
+            <label for="promocion">Promoción</label> <br />
+            <input type="radio" name="ninguno" value="no" />Ninguno<br />
+            <input type="radio" name="transporte gratuito" value="trans" />Transporte gratuito<br />
+            <input type="radio" name="descuento 5%" value="desc" />Descuento 5%<br />
+
+
+        </fieldset>
+        <br />
+        <br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+
+
+    </form>
+    <hr>
+    <p><a href="../../../actividades.html">Inicio actividades</a></p>
+
+</body>
+
+</html>
